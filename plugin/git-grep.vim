@@ -24,7 +24,7 @@ function! s:GitGrep(cmd, args)
     exec "redraw!"
 endfunction
 
-command! -nargs=* -complete=file GitGrep call s:GitGrep('grep<bang>', <q-args>)
-command! -nargs=* -complete=file GitGrepAdd call s:GitGrep('grepadd<bang>', <q-args>)
-command! -nargs=* -complete=file LGitGrep call s:GitGrep('lgrep<bang>', <q-args>)
-command! -nargs=* -complete=file LGitGrepAdd call s:GitGrep('lgrepadd<bang>', <q-args>)
+command! -nargs=* -complete=file GitGrep call s:GitGrep('grep!', <q-args>)
+command! -nargs=* -complete=file GitGrepAdd call s:GitGrep('grepadd!', <q-args>)
+command! -nargs=* -complete=file LGitGrep call s:GitGrep('lgrep!', <q-args>)
+command! -nargs=* -complete=file LGitGrepAdd call s:GitGrep('lgrepadd!', <q-args>)
